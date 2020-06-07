@@ -1,7 +1,7 @@
 <html>
 <link rel="stylesheet" href="csstyle.css"/>
 <body>
-<h1 style="background-color:pink;">PhoneBook Management System</h1>
+<h1 style="background-color:pink;">Phone-A-Friend</h1>
 <div class="bg">
 
  <img onclick="location.href='CreateTable.php';" src="conf.png" height="50" width="50" title="Configure" />
