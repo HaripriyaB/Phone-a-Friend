@@ -1,0 +1,66 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 10.1
+-- Dumped by pg_dump version 10.1
+
+-- Started on 2018-03-05 09:00:09
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 196 (class 1259 OID 16394)
+-- Name: PhoneBook; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE "PhoneBook" (
+    "FirstName" character varying,
+    "LastName" character varying(50) COLLATE pg_catalog."C" DEFAULT NULL::character varying,
+    "Email" character varying(50) COLLATE pg_catalog."C" DEFAULT NULL::character varying,
+    "PhoneNumber" numeric(10,0) DEFAULT 0 NOT NULL,
+    "DOB" date,
+    "Address" character varying(100) COLLATE pg_catalog."C" DEFAULT NULL::character varying,
+    "AlternateNumber" numeric(10,0) DEFAULT NULL::numeric
+);
+
+
+ALTER TABLE "PhoneBook" OWNER TO postgres;
+
+--
+-- TOC entry 2794 (class 0 OID 16394)
+-- Dependencies: 196
+-- Data for Name: PhoneBook; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "PhoneBook" ("FirstName", "LastName", "Email", "PhoneNumber", "DOB", "Address", "AlternateNumber") FROM stdin;
+Haripriya	Baskaran	haripriya@iiitmanipur.ac.in	7550013760	1998-12-06	IIIT Manipur, Girls hostel, Imphal, Manipur, India	0
+Anupriya	Sinha	anupriya@iiitmanipur.ac.in	7065711707	2018-02-06	IIIT Manipur, Girls hostel, Imphal, Manipur, India	995575768
+Aparna	Baskaran	abc@pel.com	1234444443	2005-03-25	Chennai, Tamil Nadu	0
+Rushdie	Devi	rushdie@iiitmanipur.ac.in	7005456242	1997-05-30	IIIT Manipur, Girls hostel, Imphal, Manipur, India	8794136951
+Shweta	Kumari	a@gmail.com	9612875432	1996-08-13	IIIT Manipur, Girls hostel, Imphal, Manipur, India	0
+Baskaran	Lakshapathi	baskaran@gmail.com	9444013760	1966-03-13	Chennai, Tamil Nadu	9500163760
+asdf	zxcv	asd@cgokm.com	1234567890	2017-12-02	qwe	0
+Devigeetha	S	devi@gmail.com	9094804188	1999-06-09	Mandaveli Lane, Mandaveli, Chennai-600004	0
+\.
+
+
+-- Completed on 2018-03-05 09:00:11
+
+--
+-- PostgreSQL database dump complete
+--
+
